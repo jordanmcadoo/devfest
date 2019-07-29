@@ -41,7 +41,7 @@
         height: 32px;
         background-color: var(--default-primary-color);
         transition: background-color var(--animation);
-        -webkit-mask: url('/images/logo-monochrome.svg') no-repeat;
+        -webkit-mask: url('/images/logo-cropped.svg') no-repeat;
       }
 
       .nav-items {
@@ -157,7 +157,7 @@
         </a>
       </paper-tabs>
 
-      <paper-menu-button
+      <!-- <paper-menu-button
         id="notificationsMenu"
         class="notifications-menu"
         vertical-align="top"
@@ -191,7 +191,7 @@
             </div>
           </div>
         </div>
-      </paper-menu-button>
+      </paper-menu-button> -->
 
       <paper-menu-button
         class="auth-menu"
@@ -216,12 +216,6 @@
           </div>
         </div>
       </paper-menu-button>
-
-      <paper-icon-button
-        icon="hoverboard:account"
-        on-tap="signIn"
-        hidden$="[[_isAccountIconHidden(user.signedIn, viewport.isLaptopPlus)]]"
-      ></paper-icon-button>
     </app-toolbar>
 
   </template>
